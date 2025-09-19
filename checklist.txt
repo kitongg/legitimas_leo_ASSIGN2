@@ -1,0 +1,79 @@
+// START OF CHECKING PYTHON VERSION
+
+
+PS F:\Masters Assignments\legitimas_leo_ASSIGN2> python --version 
+Python 3.13.3
+PS F:\Masters Assignments\legitimas_leo_ASSIGN2> 
+
+// END OF CHECKING PYTHON VERSION
+
+
+
+// START OF ACTIVATING THE VIRTUAL ENVIRONMENT
+
+PS F:\Masters Assignments\legitimas_leo_ASSIGN2> .venv\Scripts\Activate
+(.venv) PS F:\Masters Assignments\legitimas_leo_ASSIGN2>
+
+// END OF ACTIVATING THE VIRTUAL ENVIRONMENT
+
+
+
+// START OF CHECKING DJANGO VERSION
+
+(.venv) PS F:\Masters Assignments\legitimas_leo_ASSIGN2> python -m django --version  
+5.2.6
+(.venv) PS F:\Masters Assignments\legitimas_leo_ASSIGN2> 
+
+// END OF CHECKING DJANGO VERSION
+
+
+
+
+// START OF CREATING A PROJECT AND THE APP
+
+.venv) PS F:\Masters Assignments\legitimas_leo_ASSIGN2> django-admin startproject leoproject .
+(.venv) PS F:\Masters Assignments\legitimas_leo_ASSIGN2> python manage.py startapp .core 
+CommandError: '.core' is not a valid app name. Please make sure the name is a valid identifier.
+(.venv) PS F:\Masters Assignments\legitimas_leo_ASSIGN2> python manage.py startapp . core
+CommandError: '.' is not a valid app name. Please make sure the name is a valid identifier.
+(.venv) PS F:\Masters Assignments\legitimas_leo_ASSIGN2> python .\manage.py startapp leoapp  
+(.venv) PS F:\Masters Assignments\legitimas_leo_ASSIGN2> dir  
+
+
+    Directory: F:\Masters Assignments\legitimas_leo_ASSIGN2
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        19/09/2025   9:23 am                .venv
+d-----        19/09/2025   9:40 am                leoapp
+d-----        19/09/2025   9:38 am                leoproject
+-a----        19/09/2025   9:37 am            688 manage.py
+
+
+(.venv) PS F:\Masters Assignments\legitimas_leo_ASSIGN2>
+
+// END OF CREATING A PROJECT AND THE APP
+
+
+// START OF RUNSERVER 
+
+(.venv) PS F:\Masters Assignments\legitimas_leo_ASSIGN2> python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+September 19, 2025 - 09:42:00
+Django version 5.2.6, using settings 'leoproject.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/5.2/howto/deployment/
+
+// END OF RUNSERVER 
+
+ 
